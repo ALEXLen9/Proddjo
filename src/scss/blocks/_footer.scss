@@ -1,0 +1,41 @@
+.footer {
+
+    background-color: $white;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.footer__logo {
+    font-size: 0.75rem;
+    color: $gray__light;
+    font-weight: 300;
+}
+
+.footer__nav {
+    align-items: center;
+
+}
+
+.footer__link {
+    border-left: 1px solid $gray__dot;
+    padding: 0 1.2rem;
+
+    text-decoration: none;
+    font-size: 0.84rem;
+    color: $gray__light;
+    transition: color 0.2s linear;
+
+    &:hover {
+        color: $blue__btnbg;
+    }
+
+    &:last-child {
+        border-right: 1px solid $gray__dot;
+
+    }
+}

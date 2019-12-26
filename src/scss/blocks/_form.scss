@@ -1,0 +1,32 @@
+.form___title {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: $blue__light;
+    margin: 9rem 0 3rem;
+}
+
+.form__blank {
+    position: relative;
+    padding: 3.7rem 6.4rem;
+    background: $white;
+    margin-bottom: 6rem;
+}
+
+.form__inform {
+    display: flex;
+    width: 50%;
+}
+
+.form__radio {
+    display: flex;
+    width: 100%;
+    margin: 0.5rem 0 3.83rem;
+}
+
+.trade__radio {
+    margin: 0.5rem 0 2.35rem;
+}
+
+.form__input {
+    position: relative;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Nunito&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/68dc8f609d.js" crossorigin="anonymous"></script>
+    <title>Proddjo</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <div class="logo">
+                        <img class="logo__img" src="public/images/logo.png" alt="">
+                    </div>
+                    <button class="btn">
+                        <i class="fas fa-plus"></i> Create project
+                    </button>
+                </div>
+
+                <div class="nav">
+                    <div class="nav__item">
+                        <div class="nav__icon">
+                            <img class="icon__image" src="public/images/nav_icon_1.png" alt="">
+                        </div>
+                        <a class="nav__link" href="#">Contact us</a>
+                    </div>
+                    <div class="nav__item">
+                        <div class="nav__icon">
+                            <img class="icon__image" src="public/images/nav_icon_2.png" alt="">
+                        </div>
+                        <a class="nav__link" href="#">My account</a>
+                    </div>
+                    <div class="nav__item nav__exit">
+                        <div class="nav__icon">
+                            <img class="icon__image exit__image" src="public/images/nav_icon_3.png" alt="">
+                        </div>
+                        <a  class="nav__link" href="#">Log Off</a>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div> <!-- /.container -->
+    </header> <!-- /.header -->
+
+    <div class="form">
+        <div class="container">
+            <div class="form___title"> Create or edit your project</div>
+            <div class="form__blank">
+                <div class="project__title">Project Information</div>
+                <div class="form__inform">
+                    
+                    <div class="project__col">
+                        <div class="form__input">
+                            <input type="text" class="project__input" placeholder=" ">
+                            <label class="project__label">Project Name</label>
+                            <img class="project__img" src="public/images/name_icon.png" alt="">
+                            <div class="project__mandatory">
+                                <div class="project__star">*</div>
+                            </div>
+                        </div>  
+
+                        <div class="form__input">
+                            <input type="text" class="project__input" placeholder=" ">
+                            <label class="project__label">Budget</label>
+                            <img class="project__img" src="public/images/budget_icon.png" alt="">
+                        </div>
+
+                        <div class="form__input">
+                            <input type="text" class="project__input" placeholder=" ">
+                            <label class="project__label">Time</label>
+                            <img class="project__img" src="public/images/time_icon.png" alt="">
+                            <div class="project__mandatory">
+                                <div class="project__star">*</div>
+                            </div>
+                        </div>
+
+                        <div class="form__input">
+                            <input type="text" class="project__input" placeholder=" ">
+                            <label class="project__label">Location</label>
+                            <img class="project__img" src="public/images/loc_icon.png" alt="">
+                            <div class="project__mandatory">
+                                <div class="project__star">*</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project__col">
+                        <div class="form__radio">
+                            <div class="radio">
+                                <div class="project__title title">Project Status</div>
+                               
+                                <label class="radio__dot">
+                                    <input type="radio" name="project_status" checked>
+                                    <div class="radio__text">In Progress</div>
+                                </label>
+                                <label class="radio__dot">
+                                    <input type="radio" name="project_status">
+                                    <div class="radio__text">Open</div>
+                                </label>
+                                <label class="radio__dot">
+                                    <input type="radio" name="project_status">
+                                    <div class="radio__text">Closer</div>
+                                </label>
+                                <label class="radio__dot">
+                                    <input type="radio" name="project_status">
+                                    <div class="radio__text">Done</div>
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <div class="project__title title">Project Type</div>
+                                
+                                <label class="radio__dot">
+                                    <input type="radio" name="type" checked>
+                                    <div class="radio__text">Public</div>
+                                </label>
+                                <label class="radio__dot">
+                                    <input type="radio" name="type">
+                                    <div class="radio__text">Private</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="project__image">
+                            <div class="project__title title">Project Image</div>
+                            <div class="file__upload">
+                                <div class="file__num" id="file__num">.</div>
+                                <label><input id="file__input" type="file" name="file">Select Image</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="form__inform link_desc">
+                    <div class="form__input">
+                        <input type="text" class="project__input" placeholder=" ">
+                        <label class="project__label">Links</label>
+                        <img class="project__img" src="public/images/link_icon.png" alt="">
+                    </div>
+                    
+                    <div class="form__input">
+                        <input type="text" class="project__input project__desc" placeholder=" ">
+                        <label class="project__label label__desc">Description</label>
+                        <img class="project__img img__desc" src="public/images/desc_icon.png" alt="">
+                    </div>
+                </div>
+
+
+                <div class="project__title">Trade Details</div>
+                <div class="form__inform">
+                
+                    <div class="project__col">
+                        <div class="form__input">
+                            <input type="text" class="project__input" placeholder=" ">
+                            <label class="project__label">Trade Name</label>
+                            <img class="project__img" src="public/images/name_icon.png" alt="">
+                            <div class="project__mandatory">
+                                <div class="project__star">*</div>
+                            </div>
+                        </div>
+                
+                        <div class="form__input">
+                            <input type="text" class="project__input" placeholder=" ">
+                            <label class="project__label">Trade Budget</label>
+                            <img class="project__img" src="public/images/budget_icon.png" alt="">
+                        </div>
+                
+                        <div class="form__input">
+                            <input type="text" class="project__input" placeholder=" ">
+                            <label class="project__label">Trade Time</label>
+                            <img class="project__img" src="public/images/time_icon.png" alt="">
+                            <div class="project__mandatory">
+                                <div class="project__star">*</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="project__col">
+                        <div class="form__radio trade__radio">
+                            <div class="radio">
+                                <div class="project__title title">Status</div>
+                
+                                <label class="radio__dot">
+                                    <input type="radio" name="status" checked>
+                                    <div class="radio__text">In Progress</div>
+                                </label>
+                                <label class="radio__dot">
+                                    <input type="radio" name="status">
+                                    <div class="radio__text">Awarded</div>
+                                </label>
+                            </div>
+                
+                        </div>
+                
+                        <div class="project__image">
+                            <div class="project__title title">Trade Documents</div>
+                            <div class="file__upload">
+                                <div class="file__num" id="file__num">.</div>
+                                <label><input id="file__input" type="file" name="file">Select Docs</label>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form__inform link_desc">
+                
+                    <div class="form__input">
+                        <input type="text" class="project__input project__desc" placeholder=" ">
+                        <label class="project__label label__desc">Description</label>
+                        <img class="project__img img__desc" src="public/images/desc_icon.png" alt="">
+                    </div>
+
+                    <button class="btn add">
+                        <i class="fas fa-plus"></i> Add Trade
+                    </button>
+                </div>
+
+                <div class="btn__items">
+                    <button class="btn item">
+                        Create project
+                    </button>
+
+                    <button class="btn__cancel">
+                        Cancel
+                    </button>
+                </div>
+                <div class="mandatory__text" >
+                    <div class="project__mandatory field">
+                        <div class="project__star">*</div>
+                    </div>
+                    <div> mandatory field </div>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </div> <!-- /.form -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <div class="logo">
+                        <img class="logo__img logo__footer" src="public/images/logo.png" alt="">
+                        © 2019 All Rights Reserved
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <a class="footer__link" href="#">Create project</a>
+                    <a class="footer__link" href="#">Contact Us</a>
+                    <a class="footer__link" href="#">My Account</a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+
+    
+</body>
+</html>

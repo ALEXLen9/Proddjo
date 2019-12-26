@@ -1,0 +1,143 @@
+.project__col {
+    display: block;
+    flex-wrap: wrap;
+}
+
+
+.project__title {
+    margin-bottom: 1rem;
+
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: $black;
+}
+
+.title {
+    font-size: 0.92rem;
+}
+
+
+.project__input {
+    margin: 1rem 125px 1rem 0;
+    padding: 1rem 0 1rem 3rem;
+    width: 350px;
+
+    border: 1px solid rgba($color: $gray__light, $alpha: 0.5);
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.2s linear;
+
+    &:focus,
+    &:not(:placeholder-shown) {
+        border: 1px solid $blue__btnbg;
+
+        ~.project__label {
+            top: 20%;
+            font-size: 0.7rem;
+        }
+    }
+
+}
+
+.project__label {
+    font-size: 0.83rem;
+    font-weight: 300;
+    color: $gray__light;
+
+    position: absolute;
+    top: 41%;
+    left: 10%;
+    z-index: 0;
+
+    transition: 0.3s;
+}
+
+.project__img {
+    position: absolute;
+    top: 40%;
+    left: 1rem;
+    z-index: 0;
+}
+
+.project__mandatory {
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: $blue__nav;
+    border-radius: 1rem;
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    z-index: 1;
+    transition: background-color 0.2s linear;
+
+    &:hover {
+        background-color: $blue__light;
+
+        .project__star {
+            color: $white;
+        }
+    }
+}
+
+.field {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    z-index: 1;
+}
+
+.mandatory__text {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 1rem 2.5rem;
+
+    font-size: 0.73rem;
+    color: $gray__light;
+    font-weight: 300;
+    align-items: center;
+    cursor: default;
+}
+
+
+.project__star {
+    padding: 3px 8px;
+    cursor: default;
+    font-size: 1.5rem;
+    color: $gray;
+    font-weight: 700;
+
+    transition: color 0.2s linear;
+}
+
+
+.link_desc {
+    display: block;
+    margin-bottom: 4rem;
+
+    .project__input {
+        width: 825px;
+    }
+}
+
+.project__desc {
+    padding-bottom: 5rem;
+
+    &:focus,
+    &:not(:placeholder-shown){
+        ~.label__desc {
+            top: 14px;
+            font-size: 0.7rem;
+        }
+    }
+}
+
+
+
+.label__desc {
+    top: 22%;
+}
+
+.img__desc {
+    top: 22%;
+}

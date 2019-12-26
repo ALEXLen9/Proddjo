@@ -1,0 +1,91 @@
+/*  Color   */
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  background-color: #f0f6f7;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*  Blocks  */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  margin-right: 4.05rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3.05rem;
+  color: #1176d3;
+  font-weight: 400;
+}
+
+.logo__second {
+  color: #4598ff;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 10px 20px;
+  font-size: 0.92rem;
+  color: #fff;
+  font-weight: 400;
+  border: none;
+  border-radius: 4px;
+  background-color: #0ba0ff;
+  outline: none;
+  -webkit-box-shadow: 0 2px 3px 2px rgba(113, 155, 255, 0.2);
+          box-shadow: 0 2px 3px 2px rgba(113, 155, 255, 0.2);
+  -webkit-transition: background-color 0.2s linear, font-size 0.2s linear, margin 0.2s linear;
+  transition: background-color 0.2s linear, font-size 0.2s linear, margin 0.2s linear;
+}
+
+.btn:hover {
+  background: #1176d3;
+  font-size: 1rem;
+  margin: 0.95rem 0;
+}
+
+.btn .fas {
+  margin-right: 0.5rem;
+  font-size: 0.83rem;
+}
+/*# sourceMappingURL=style.css.map */
