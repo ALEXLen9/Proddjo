@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Nunito&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/68dc8f609d.js" crossorigin="anonymous"></script>
+
     <title>Proddjo</title>
 </head>
 <body>
@@ -18,12 +19,12 @@
                     <div class="logo">
                         <img class="logo__img" src="public/images/logo.png" alt="">
                     </div>
-                    <button class="btn">
+                    <button class="btn head">
                         <i class="fas fa-plus"></i> Create project
                     </button>
                 </div>
 
-                <div class="nav">
+                <div class="nav" id="nav">
                     <div class="nav__item">
                         <div class="nav__icon">
                             <img class="icon__image" src="public/images/nav_icon_1.png" alt="">
@@ -42,6 +43,8 @@
                         </div>
                         <a  class="nav__link" href="#">Log Off</a>
                     </div>
+
+                    
 
                 </div>
             </div>
@@ -130,9 +133,13 @@
 
                         <div class="project__image">
                             <div class="project__title title">Project Image</div>
-                            <div class="file__upload">
-                                <div class="file__num" id="file__num">.</div>
-                                <label><input id="file__input" type="file" name="file">Select Image</label>
+                            <div class="project__border">
+                                <div class="choose-file-block">
+                                    <label>
+                                        <input id="choose-file1" class="choose-file" type="file" name="file[]">Add Image
+                                    </label>
+                                    <div class="choosen-file-name"></div>
+                                </div>
                             </div>
 
                         </div>
@@ -201,13 +208,18 @@
                         </div>
                 
                         <div class="project__image">
-                            <div class="project__title title">Trade Documents</div>
-                            <div class="file__upload">
-                                <div class="file__num" id="file__num">.</div>
-                                <label><input id="file__input" type="file" name="file">Select Docs</label>
+                            <div class="project__title title">Trade Document</div>
+                            <div class="project__border">
+                                <div class="choose-file-block">
+                                    <label>
+                                        <input id="choose-file1" class="choose-file" type="file" name="file[]">Add Docs
+                                    </label>
+                                    <div class="choosen-file-name"></div>
+                                </div>
                             </div>
                 
                         </div>
+                        
                     </div>
                 </div>
                 
@@ -263,7 +275,8 @@
         
     </footer>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="public/js/app.js"></script>
     
 </body>
 </html>

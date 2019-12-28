@@ -24,6 +24,10 @@
         font-size: 0.83rem;
     }
 
+    @media screen and ($mobile-sm) {
+        min-width: 125px;
+    }
+
 
 }
 
@@ -37,10 +41,35 @@
         background: $blue__btnbg;
         color: $white;
     }
+
+    @media screen and ($mobile-sm) {
+        padding: 8px 24px;
+    }
+
+    @media screen and ($mobile-sm) {
+        max-width: 125px;
+        padding: 8px 8px;
+    }
 }
 
 .item {
     padding: 8px 30px;
+
+    @media screen and ($mobile-sm) {
+        padding: 8px 25px;
+    }
+
+    @media screen and ($mobile-sm) {
+        max-width: 125px;
+        padding: 8px 8px;
+    }
+}
+
+.head{
+    @media screen and ($mobile-sm) {
+        min-width: 125px;
+        display: none;
+    }
 }
 
 .btn__cancel {
@@ -62,5 +91,9 @@
     &:hover {
         background-color: $blue__light;
         border: 2px solid $blue__light;
+    }
+
+    @media screen and ($mobile-sm) {
+        min-width: 125px;
     }
 }

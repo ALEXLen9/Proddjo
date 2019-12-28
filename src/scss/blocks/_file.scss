@@ -1,22 +1,14 @@
-.file__upload {
-    position: relative;
-    width: 348px;
-    display: flex;
-}
+.choose-file-block label {
+    min-width: 7rem;
 
-#file__input {
-    display: none;
-}
-
-.file__upload label {
     position: absolute;
-    top: 6%;
+    top: 5%;
     right: 1%;
     z-index: 1;
     cursor: pointer;
     background: $file__btn;
     border-radius: 3px;
-    padding: 1rem;
+    padding: 0.85rem;
     font-size: 0.82rem;
     color: $gray__light;
     font-weight: 400;
@@ -29,17 +21,21 @@
     }
 }
 
-.file__num {
+
+.choosen-file-name {
     padding: 1rem;
-    padding-right: 5rem;
+    padding-right: 8rem;
     width: 350px;
 
-    border: 1px solid rgba($color: $gray__light, $alpha: 0.5);
-    border-radius: 4px;
-    outline: none;
-    transition: border 0.2s linear;
+    @media screen and ($mobile-sm) {
+        width: 285px;
+    }
+
+    @media screen and ($mobile-se) {
+        width: 260px;
+    }
 }
 
-#file__num {
-    color: $gray__light;
+.choose-file {
+    display: none;
 }

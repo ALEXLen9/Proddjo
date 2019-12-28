@@ -8,10 +8,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+
+    @media screen and ($mobile-sm) {
+        padding: 0;
+    }
 }
 
 .footer__logo {
-    font-size: 0.75rem;
+    font-size: 0.60rem;
     color: $gray__light;
     font-weight: 300;
 }
@@ -19,6 +23,12 @@
 .footer__nav {
     align-items: center;
 
+    @media screen and ($mobile-sm) {
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
 }
 
 .footer__link {
@@ -36,6 +46,22 @@
 
     &:last-child {
         border-right: 1px solid $gray__dot;
+
+        @media screen and ($mobile-sm) {
+            border-right: none;
+            border-bottom: none;
+        }
+    }
+
+    @media screen and ($mobile) {
+        padding: 0.1rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    @media screen and ($mobile-sm) {
+        width: 100px;
+        border-left: none;
+        border-bottom: 1px solid $gray__dot;
 
     }
 }

@@ -2,6 +2,18 @@
     display: block;
     margin-right: 5.04rem;
     margin-top: 0.5rem;
+
+    @media screen and ($tablet) {
+        margin-right: 10rem;
+    }
+
+    @media screen and ($mobile) {
+        margin-right: 5rem;
+    }
+
+    @media screen and ($mobile-sm) {
+        margin-right: 1rem;
+    }
 }
 
 .radio__dot {

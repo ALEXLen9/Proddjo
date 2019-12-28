@@ -3,6 +3,21 @@
     font-weight: 900;
     color: $blue__light;
     margin: 9rem 0 3rem;
+
+    @media screen and ($mobile) {
+        font-size: 2rem;
+        margin: 7rem 0 1rem;
+    }
+
+    @media screen and ($mobile-sm) {
+        font-size: 1.4rem;
+    }
+
+    @media screen and ($mobile-se) {
+        font-size: 1.2rem;
+    }
+
+
 }
 
 .form__blank {
@@ -10,23 +25,54 @@
     padding: 3.7rem 6.4rem;
     background: $white;
     margin-bottom: 6rem;
+
+    @media screen and ($mobile) {
+        padding: 2rem 1rem;
+    }
+
+    @media screen and ($mobile) {
+        margin-bottom: 4rem;
+    }
+
 }
 
 .form__inform {
     display: flex;
     width: 50%;
+
+    @media screen and ($tablet) {
+
+        flex-wrap: wrap;
+    }
 }
 
 .form__radio {
     display: flex;
     width: 100%;
-    margin: 0.5rem 0 3.83rem;
+    margin: 0.5rem 0 4rem;
+
+    @media screen and ($tablet) {
+        margin: 0.5rem 0 2rem;
+    }
 }
 
 .trade__radio {
-    margin: 0.5rem 0 2.35rem;
+    margin: 0.5rem 0 2.5rem;
 }
 
 .form__input {
     position: relative;
+
+
+    @media screen and ($tablet) {
+        width: 110%;
+    }
+
+    @media screen and ($mobile) {
+        width: 92%;
+    }
+
+    @media screen and ($mobile-sm) {
+        width: 100%;
+    }
 }

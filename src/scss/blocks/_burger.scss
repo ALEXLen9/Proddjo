@@ -1,0 +1,15 @@
+.burger {
+    width: 35px;
+    height: 35px;   
+
+    display: none;
+    padding: 0;
+    border: 0;
+    background: none;
+
+    outline: none;
+
+    @media screen and ($mobile-sm) {
+        display: block;
+    }
+}
