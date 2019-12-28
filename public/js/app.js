@@ -9,3 +9,11 @@ $(function () {
 
 
 });
+
+
+$(".add").click(function () {
+
+    $(".project__clone").clone().addClass("newTarget").appendTo('.form__clone');
+
+
+});

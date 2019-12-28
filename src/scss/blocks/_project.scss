@@ -136,7 +136,6 @@
 
 .link_desc {
     display: block;
-    margin-bottom: 4rem;
 
     .project__input {
         width: 825px;
@@ -195,4 +194,8 @@
     border-radius: 4px;
     outline: none;
     transition: border 0.2s linear;
+}
+
+.project__clone{
+    margin: 4rem 0 0 0;
 }
