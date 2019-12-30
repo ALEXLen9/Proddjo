@@ -22,26 +22,32 @@
 
 .form__blank {
     position: relative;
-    padding: 3.7rem 6.4rem;
+    width: 100%;
+    padding: 3.7rem 10%;
     background: $white;
     margin-bottom: 6rem;
 
-    @media screen and ($mobile) {
+    @media screen and ($tablet) {
         padding: 2rem 1rem;
     }
 
     @media screen and ($mobile) {
         margin-bottom: 4rem;
+        padding: 2rem 10%;
+    }
+
+    @media screen and ($mobile-sm) {
+        margin-bottom: 4rem;
+        padding: 2rem 5%;
     }
 
 }
 
 .form__inform {
     display: flex;
-    width: 50%;
+    width: 100%;
 
-    @media screen and ($tablet) {
-
+    @media screen and ($mobile) {
         flex-wrap: wrap;
     }
 }
@@ -49,11 +55,11 @@
 .form__radio {
     display: flex;
     width: 100%;
-    margin: 0.5rem 0 4rem;
+    margin: 0.5rem 0 4.5rem;
 
-    @media screen and ($tablet) {
-        margin: 0.5rem 0 2rem;
-    }
+    // @media screen and ($tablet) {
+    //     margin: 0.5rem 0 2rem;
+    // }
 }
 
 .trade__radio {
@@ -62,17 +68,17 @@
 
 .form__input {
     position: relative;
+    display: block;
+    margin-right: 7%;
 
 
-    @media screen and ($tablet) {
-        width: 110%;
-    }
+    // @media screen and ($tablet) {
+    //     width: 110%;
+    // }
 
-    @media screen and ($mobile) {
-        width: 92%;
-    }
 
-    @media screen and ($mobile-sm) {
-        width: 100%;
-    }
+
+    // @media screen and ($mobile-sm) {
+    //     width: 100%;
+    // }
 }

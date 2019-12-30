@@ -26,14 +26,6 @@
     padding: 1rem;
     padding-right: 8rem;
     width: 350px;
-
-    @media screen and ($mobile-sm) {
-        width: 285px;
-    }
-
-    @media screen and ($mobile-se) {
-        width: 260px;
-    }
 }
 
 .choose-file {

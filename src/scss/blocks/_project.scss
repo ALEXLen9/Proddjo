@@ -1,8 +1,17 @@
 .project__col {
     display: block;
     flex-wrap: wrap;
+    width: 100%;
 }
 
+.col__left {
+    margin-right: 7%;
+    width: 75%;
+
+    @media screen and ($mobile) {
+        width: 100%;
+    }
+}
 
 .project__title {
     margin-bottom: 0.92rem;
@@ -14,14 +23,13 @@
 
 .title {
     font-size: 0.92rem;
-    width: 9rem;
 }
 
 
 .project__input {
-    margin: 1rem 125px 1rem 0;
+    margin: 1rem 0;
     padding: 1rem 0 1rem 3rem;
-    width: 350px;
+    width: 75%;
 
     border: 1px solid rgba($color: $gray__light, $alpha: 0.5);
     border-radius: 4px;
@@ -38,23 +46,17 @@
         }
     }
 
-    @media screen and ($tablet) {
-        width: 500px;
-        margin: 1rem 95px 1rem 0;
-    }
+    // @media screen and ($tablet) {
+    //     width: 500px;
+    //     margin: 1rem 95px 1rem 0;
+    // }
 
     @media screen and ($mobile) {
-        width: 400px;
+        width: 100%;
     }
 
     @media screen and ($mobile-sm) {
-        width: 245px;
-        margin: 0.5rem 40px 0.5rem 0;
-    }
-
-    @media screen and ($mobile-sm) {
-        width: 222px;
-        margin: 0.5rem 35px 0.5rem 0;
+        margin: 0.5rem 0;
     }
 }
 
@@ -65,7 +67,7 @@
 
     position: absolute;
     top: 41%;
-    left: 50px;
+    left: 46px;
     z-index: 0;
 
     transition: 0.3s;
@@ -76,6 +78,10 @@
     top: 40%;
     left: 1rem;
     z-index: 0;
+
+    @media screen and ($mobile-sm) {
+        top: 35%;
+    }
 }
 
 .project__mandatory {
@@ -85,7 +91,7 @@
     border-radius: 1rem;
     position: absolute;
     top: 30%;
-    right: 18%;
+    right: 15%;
     z-index: 1;
     transition: background-color 0.2s linear;
 
@@ -98,7 +104,11 @@
     }
 
     @media screen and ($mobile) {
-        right: 0;
+        right: -10%;
+    }
+
+    @media screen and ($mobile-sm) {
+        right: -2rem;
     }
 }
 
@@ -138,23 +148,23 @@
     display: block;
 
     .project__input {
-        width: 825px;
+        width: 100%;
 
-        @media screen and ($tablet) {
-            width: 500px;
-        }
+        // @media screen and ($tablet) {
+        //     width: 500px;
+        // }
 
-        @media screen and ($mobile) {
-            width: 400px;
-        }
+        // @media screen and ($mobile) {
+        //     width: 400px;
+        // }
 
-        @media screen and ($mobile-sm) {
-            width: 285px;
-        }
+        // @media screen and ($mobile-sm) {
+        //     width: 285px;
+        // }
 
-        @media screen and ($mobile-se) {
-            width: 260px;
-        }
+        // @media screen and ($mobile-se) {
+        //     width: 260px;
+        // }
     }
 }
 
@@ -164,7 +174,7 @@
     &:focus,
     &:not(:placeholder-shown) {
         ~.label__desc {
-            top: 14px;
+            top: 12px;
             font-size: 0.7rem;
         }
     }
@@ -182,13 +192,14 @@
 
 .project__image {
     position: relative;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 
 .project__border {
     position: absolute;
     height: 3.2rem;
+    width: 100%;
 
     border: 1px solid rgba($color: $gray__light, $alpha: 0.5);
     border-radius: 4px;
@@ -196,6 +207,6 @@
     transition: border 0.2s linear;
 }
 
-.project__clone{
+.project__clone {
     margin: 4rem 0 0 0;
 }

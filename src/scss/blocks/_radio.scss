@@ -1,19 +1,22 @@
 .radio {
     display: block;
-    margin-right: 5.04rem;
-    margin-top: 0.5rem;
+    margin-right: 20%;
 
-    @media screen and ($tablet) {
-        margin-right: 10rem;
-    }
+    // @media screen and ($tablet) {
+    //     margin-right: 10rem;
+    // }
 
-    @media screen and ($mobile) {
-        margin-right: 5rem;
-    }
+    // @media screen and ($mobile) {
+    //     margin-right: 5rem;
+    // }
 
     @media screen and ($mobile-sm) {
-        margin-right: 1rem;
+        margin-right: 15%;
     }
+}
+
+.radio__left {
+    margin-right: 0;
 }
 
 .radio__dot {
