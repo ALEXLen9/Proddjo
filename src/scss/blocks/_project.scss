@@ -36,6 +36,10 @@
     outline: none;
     transition: border 0.2s linear;
 
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+
     &:focus,
     &:not(:placeholder-shown) {
         border: 1px solid $blue__btnbg;

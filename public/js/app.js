@@ -13,7 +13,16 @@ $(function () {
 
 $(".add").click(function () {
 
-    $(".project__clone").clone().addClass("newTarget").appendTo('.form__clone');
+    function makeCounter() {
+        var currentCount = 1;
 
+        return function () {
+            return currentCount++;
+        };
+    }
+
+    var counter = makeCounter();
+    
+    $(".project__clone").clone().appendTo('<div name="form-clone" '+ counter + '');
 
 });
